@@ -1,11 +1,20 @@
 body {
+    font-family: monospace;
     margin: 0;
     padding: 0;
+}
+
+.home-body {
     position: fixed;
     top: 0;
     bottom: 0;
     right: 0;
     left: 0;
+}
+
+.grid-container {
+    max-width: 980px;
+    margin: auto;
 }
 a {
     text-decoration: none;
@@ -24,7 +33,7 @@ header .header-icons-container {
     width: 100%;
     height: 50px;
     display: grid;
-    background-color: #47cfac;
+    background-color: #2e7e6a; 
 }
 header .header-icons-container .icons {
     width: 300px;
@@ -60,6 +69,7 @@ nav .profile-link {
     align-items: center;
     justify-content: flex-end;
     margin-right: 50px;
+    font-size: large;
 }
 
 nav  .profile-link  a {
@@ -67,10 +77,11 @@ nav  .profile-link  a {
     border-bottom: 1px solid black;
 }
 
-main {
+.home-main {
     height: 100%; 
     background-image: url(./Cover.png);
     background-size: cover;
+    background-repeat: no-repeat;
     background-position: center;
     display: flex;
     justify-content: center;
@@ -91,7 +102,7 @@ main .main-container .main-container-title {
 }
 
 main .main-container .main-container-button {
-    background-color: #47cfac;
+    background-color: #2e7e6a;
     height: 40px;
     width: 200px;
     margin: 140px auto;
@@ -106,9 +117,159 @@ main .main-container .main-container-button a {
     font-weight: bold;
 }
 
+.blogs-main {
+    display: grid;
+}
 
+.main-news-container {
+    background-color: #e6e9e6;
+    padding: 0 50px 40px;
+}
 
+.blogs-main-new {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 2fr;
+}
 
+.blogs-news-img-container {
+    grid-column: 1;
+}
 
+.blogs-news-img-container img {
+    width: 85%;
+}
 
+.blogs-news-info-container {
+    grid-column: 2;
 
+    }
+
+.blogs-news-info-container p {
+        margin-bottom: 35px;
+    }
+
+.blogspot-container {
+    padding: 0 50px 40px;
+}
+
+.blogs-post-container h3 {
+    border-bottom:1px solid #cdd2da ;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.blogs-button {
+    border: 1px solid #2e7e6a;
+    padding: 10px 15px;
+    font-size: 12px;
+    border-radius: 5px;
+}
+.blogs-button:hover {
+	border: 1px solid white;
+	color: white;
+	background-color: #2e7e6a;
+}
+
+.blogs-post-container .post-container {
+    display: inline-block;
+    padding-left: 50px;
+    max-width: 30%;
+    margin-bottom: 50px;
+}
+
+.blogs-post-container .post-container p {
+    margin-bottom: 35px;
+}
+
+.blogs-post-container .post-container img {
+    width: 100%;
+}
+
+footer {
+    width: 100%;
+    height: 80px;
+    background-color: #22272d;
+    border-top: 35px solid #2e7e6a;
+    text-align: center;
+}
+footer p {
+    color: white;
+}
+
+.blogpost-img-container {
+    padding: 0 50px 40px;
+}
+.blogpost-img-container img {
+    width: 100%;
+}
+.blogpost-img-container {
+    padding: 0 50px 40px;
+}
+
+.blogpost-main-container h3 {
+    border-bottom: 1px solid #cdd2da;
+    padding-bottom: 20px;
+}
+
+.blogpost-main-container article h1 {
+    font-size: 35px;
+}
+
+.contact-main-container div {
+    display: grid;
+    background-color: #cdd2da;
+    width:49.5%;
+}
+
+.contact-main-container img {
+    width: 100px;
+    height: 100px;
+    padding-top: 10px;
+    }
+
+.contact-main-container div a {
+    border-bottom: 1px solid black;
+    padding-bottom: 5px;
+}
+
+.contact-main-container .contact-left, .contact-right {
+    text-align: initial;
+    margin-top: 85px auto;
+}
+
+.main-profile-container {
+    background-color: #e6e9e6;
+    padding: 0 50px 40px;
+}
+
+.main-profile-container {
+    columns: 2;
+}
+
+.main-profile {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 2fr;
+}
+
+.profile-blog-img img {
+    width: 300px;
+    padding-top: 50px;
+}
+
+.profile-info {
+    padding-top: 50px;
+}
+
+.main-projects-conatiner .projects-container {
+    display: inline-block;
+    padding-left: 10px;
+    max-width: 30%;
+    margin-bottom: 50px;
+}
+.main-projects-conatiner h3 {
+    text-align: center;
+    border-bottom: 1px solid #333;
+    padding-bottom: 15px;
+}
